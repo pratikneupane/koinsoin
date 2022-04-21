@@ -1,0 +1,16 @@
+.fixed {
+  position: fixed;
+  z-index: 10;
+}
+.btn {
+  background-color: #8364e2 !important;
+  border-radius: 24px !important;
+  padding: 5px 40px !important;
+  border: 0 !important;
+  transition: all 0.3s ease;
+  outline: none;
+}
+.buttons:hover {
+  box-shadow: 2px 2px 20px 0 #8364e2;
+  transition: all 0.3s ease;
+}

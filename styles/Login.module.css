@@ -1,0 +1,36 @@
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.input{
+  margin: 10px;
+  background: transparent;
+  border: 0;
+  background-color: #222227;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  padding-left: 20px;
+}
+.btn{
+  margin: 10px;
+  width: 85%;
+  border-radius: 10px;
+}
+.checkbox{
+  align-self: flex-start;
+  margin: 10px;
+  margin-left: 20px;
+}
+.checklabel{
+  margin-left: 10px;
+}
+.signup{
+  margin: 10px;
+}
+.wave{
+  height: 245px;
+}

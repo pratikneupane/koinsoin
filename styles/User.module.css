@@ -1,0 +1,55 @@
+.heading{
+    margin-bottom: 51px;
+}
+.button {
+  background-color: transparent;
+  border: 2px solid #8364e2;
+  color: #fff;
+  padding: 5px 37px;
+  border-radius: 10px;
+}
+.subtitle{
+    text-transform: uppercase;
+    opacity: 0.5;
+}
+.nopadding{
+    padding-right: 0 !important;
+    padding-left: 30px;
+    justify-self: flex-end;
+}
+.headingDonate{
+    margin: 20px;
+    margin-left: 30px;
+}
+.form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+}
+.input{
+  margin: 5px 10px;
+  background: transparent;
+  border: 0;
+  background-color: #222227;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  padding-left: 20px;
+}
+.btn{
+  margin: 10px;
+  width: 85%;
+  border-radius: 10px;
+  background-color: #8364e2;
+  border: 0;
+}
+.btnmini{
+  width: 90px;
+  border-radius: 10px;
+  background-color: #8364e2;
+  border: 0;
+  margin: 7px;
+}

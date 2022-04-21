@@ -1,0 +1,23 @@
+.paymentMethods {
+  background-color: #16151a;
+  padding: 5rem;
+}
+.payments{
+  text-align: center;
+  position: relative;
+  padding: 30 px;
+  color: #a2a2a2;
+  background: hsla(0, 0%, 100%, 0.03);
+  border: 1px solid hsla(0, 0%, 100%, 0.1);
+  display: block;
+  border-radius: 20 px;
+  box-shadow: 1px 1px 8px 1px rgb(0 0 0 / 10%);
+  transition: 0.3s;
+  padding: 2rem;
+  border-radius: 24px !important;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.payments:hover {
+  background: hsla(0, 0%, 100%, 0);
+}

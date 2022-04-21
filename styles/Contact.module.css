@@ -1,0 +1,47 @@
+.form {
+  border: 1px solid #222227;
+  border-radius: 10px;
+  padding: 24px;
+  margin: 24px 0px;
+  position: relative;
+}
+.input {
+  margin: 10px;
+  background: transparent;
+  border: 0;
+  background-color: #222227;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  color: #fff;
+  padding-left: 20px;
+}
+.halfinput > .input {
+  width: 95%;
+}
+.inputlong {
+  position: relative;
+  width: 98.5%;
+}
+.inputtextarea {
+  resize: none;
+  height: 200px;
+  padding-top: 10px;
+}
+.btn {
+  height: 50px;
+  border-radius: 12px;
+  background-color: #6164ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-left:10px;
+  padding: 0px 50px;
+}
