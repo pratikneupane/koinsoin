@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "/styles/Login.module.css";
+import Link from "next/link";
 import { Container, Row, Col, Image, Button } from "react-bootstrap";
 
 const Login = () => {
@@ -35,7 +36,10 @@ const Login = () => {
               </div>
               <Button className={`${styles.btn}`}>Login</Button>
               <div className={styles.signup}>
-                Don&apos;t have an account? <a href="/signup">SIgn Up</a>
+                Don&apos;t have an account?{" "}
+                <Link href="/signup" passHref>
+                  SIgn Up
+                </Link>
               </div>
               <div className={styles.forgot}>
                 <a href="/forgot">Forgot Password?</a>
