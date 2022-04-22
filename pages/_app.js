@@ -14,6 +14,14 @@ const layouts = {
   LD: LayoutDashboard,
 };
 library.add(fas, far);
+
+MyApp.getInitialProps = async (appContext) => {
+  // calls page's `getInitialProps` and fills `appProps.pageProps`
+  const appProps = await App.getInitialProps(appContext);
+  // Build error happens because error page tries to fetch this on build time when backend isn't availagble
+  return { ...appProps };
+};
+
 function MyApp({ Component, pageProps }) {
   const Layout = layouts[Component.layout] || ((children) => <>{children}</>);
   return (
