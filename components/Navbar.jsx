@@ -12,7 +12,7 @@ const navbar = () => {
     >
       <Container>
         <Nav>
-          <Navbar.Brand href="#home" className="text-transform-uppercase">
+          <Navbar.Brand href="/" className="text-transform-uppercase">
             <h1>
               <span
                 style={{
