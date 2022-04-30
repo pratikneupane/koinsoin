@@ -1,24 +1,33 @@
 import Particles from "react-tsparticles";
 import { Button, Container, Row, Col } from "react-bootstrap";
 import styles from "../styles/Hero.module.css";
-import Image from "next/image"
+import Image from "next/image";
 import Navbar from "./Navbar";
 
 const Hero = () => {
+  const particlesInit = async (main) => {
+    console.log(main);
+    await loadFull(main);
+  };
+
+  const particlesLoaded = (container) => {
+    console.log(container);
+  };
   return (
     <div className={styles.particles}>
       <Navbar />
       <Particles
         id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
         options={{
           background: {
             color: {
-              value: "transparent",
+              value: "#0d47a1",
             },
           },
-          fpsLimit: 60,
+          fpsLimit: 120,
           interactivity: {
-            detectsOn: "canvas",
             events: {
               onClick: {
                 enable: true,
@@ -31,12 +40,6 @@ const Hero = () => {
               resize: true,
             },
             modes: {
-              bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 0.8,
-                size: 40,
-              },
               push: {
                 quantity: 4,
               },
@@ -48,13 +51,13 @@ const Hero = () => {
           },
           particles: {
             color: {
-              value: "#fff",
+              value: "#ffffff",
             },
             links: {
-              color: "#fff",
+              color: "#ffffff",
               distance: 150,
-              enable: false,
-              opacity: 0,
+              enable: true,
+              opacity: 0.5,
               width: 1,
             },
             collisions: {
@@ -63,27 +66,28 @@ const Hero = () => {
             move: {
               direction: "none",
               enable: true,
-              outMode: "bounce",
+              outModes: {
+                default: "bounce",
+              },
               random: false,
-              speed: 1,
+              speed: 6,
               straight: false,
             },
             number: {
               density: {
                 enable: true,
-                value_area: 800,
+                area: 800,
               },
               value: 80,
             },
             opacity: {
-              value: 0.6,
+              value: 0.5,
             },
             shape: {
               type: "circle",
             },
             size: {
-              random: true,
-              value: 5,
+              value: { min: 1, max: 5 },
             },
           },
           detectRetina: true,
@@ -112,7 +116,9 @@ const Hero = () => {
               doloribus quasi inventore delectus sed est, mollitia odit.
               Officia, nobis pariatur!
             </p>
-            <Button className={`${styles.btn} buttons outline-none b-0 px-4`}>Explore</Button>
+            <Button className={`${styles.btn} buttons outline-none b-0 px-4`}>
+              Explore
+            </Button>
           </Col>
           <Col md={6}>
             <Image
